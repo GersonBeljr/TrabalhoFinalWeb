@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabalho WEB </title>
+    <link rel="stylesheet" href="styles/styleGeral.css">
+    <link rel="stylesheet" href="styles/styleJogoFim.css">
+    <link rel="stylesheet" href="styles/styleJogoGeral.css">
+    <link rel="stylesheet" href="styles/styleJogoImagem.css">
+    <link rel="stylesheet" href="styles/styleJogoIniciar.css">
+    <link rel="stylesheet" href="styles/styleJogoRespostas.css">
+</head>
+<body class="main">
+    <div class="header">
+        <h4>Jogo das Imagens</h4>
+    </div>
+    <div class="container">
+        <!--Corpo do jogo-->
+        <div class="jogo">
+            <!--Jogo--> 
+            <div class="iniciar_regras" id="pgIni">
+                <div class="regras">
+                    <p>
+                        Selecione uma dificuldade e clique em iniciar, 
+                        você vai ter um tempo limite, definido pela dificuldade selecionada, 
+                        para visualizar e ela sumirá em seguida, então escreva o maximo de palavras
+                        que se relacionem com a imagem para ganhar pontos, são 3 imagens então preste atenção e boa sorte!.
+                    </p>
+                </div>
+                <div class="iniciar">
+                        <label for="dificuldade">Defina a dificulade</label>
+                        <div class="selecaoDificuldade">
+                            <p >0.2s</p>
+                            <input type="range" id="nivel" name="dificuldade" min="2" max="10">
+                            <p >1s</p>
+                        </div>          
+                    <button id="iniciar">Iniciar</button>
+                </div>
+            </div>
+            <div class="imagem" id="pgImg">
+                <img id="imagem" src="" alt="Imagem aleatória">
+                <div class="cronometro">
+                    <p>TEMPO: <span id="cronometro">10</span></p>   
+                </div>
+            </div>
+            <div class="respostas" id="pgResp">
+                <h4>Digite!:</h4>
+                <div class="quadro" id="quadro">
+                   
+                  <!--<p class="certo">Garfo</p>
+                    <p class="errado">Garfo</p>   -->  
+                </div>
+                <div class="input_contador">
+                    <input type="text" class="inputRespostas" id="input_respostas">
+                    <p id="contador">0</p>
+                </div>
+            </div>
+            <div class="fim" id="pgFim">
+                <p><span id="jogador"></span>, pontuação: <span id="pontuaçãoFinal"></span></p>
+                <button id="jogarNovamente">Jogar novamente</button>
+            </div>
+        </div>
+        <div class="leaderboard">
+            <!--Leadearboard-->
+            <h4>Leaderboard:</h4>
+            <div class="cards">
+                
+                <div class="card">
+                    <p class="posição"><span id="posicao">1</span>&deg</p>
+                    <div class="jogador">
+                        <p>Gerson Bel</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">2</span>&deg</p>
+                    <div class="jogador">
+                        <p>Robertinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">1</span>&deg</p>
+                    <div class="jogador">
+                        <p>Gerson Bel</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">2</span>&deg</p>
+                    <div class="jogador">
+                        <p>Robertinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">1</span>&deg</p>
+                    <div class="jogador">
+                        <p>Gerson Bel</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">2</span>&deg</p>
+                    <div class="jogador">
+                        <p>Robertinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">1</span>&deg</p>
+                    <div class="jogador">
+                        <p>Gerson Bel</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">2</span>&deg</p>
+                    <div class="jogador">
+                        <p>Robertinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">1</span>&deg</p>
+                    <div class="jogador">
+                        <p>Gerson Bel</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">2</span>&deg</p>
+                    <div class="jogador">
+                        <p>Robertinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">1</span>&deg</p>
+                    <div class="jogador">
+                        <p>Gerson Bel</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">2</span>&deg</p>
+                    <div class="jogador">
+                        <p>Robertinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">1</span>&deg</p>
+                    <div class="jogador">
+                        <p>Gerson Bel</p>
+                        <p>1000000000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="posição"><span id="posicao">2</span>&deg</p>
+                    <div class="jogador">
+                        <p>Robertinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <p class="posição"><span id="posicao">3</span>&deg</p>
+                    <div class="jogador">
+                        <p>Julianinho</p>
+                        <p>1000000000</p>
+                    </div>
+                </div> 
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!--FOOTER-->
+        <h5>Responsaveis:</h5>
+        <p>Gerson Belniowski - GRR20240439</p>
+        <p>João Victor Timoteo - GRR20246658</p>
+        <p>Juliano Vidal - GRR2024</p>
+        <p>Roberto Rigo - GRR20240574</p>
+    </div>
+    
+    <script src="scripts/scriptVars.js"></script>
+    <script src="scripts/scriptPontuando.js"></script>
+    <script src="scripts/scriptJogo.js"></script>
+    <script src="scripts/scriptImagens.js"></script>
+    <script src="scripts/scriptInicioFim.js"></script>
+    
+</body>
+</html>

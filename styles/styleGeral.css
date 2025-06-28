@@ -1,0 +1,50 @@
+/*---------------------------------------------------*/
+/*  Geral  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'FontTitulo';
+    src: url('../src/SpecialElite.ttf') format('opentype');
+}
+
+/*---------------------------------------------------*/
+/*  Corpo principal do sistema  */
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #f1f5f9;
+    background: linear-gradient(120deg, #1e293b, #0f172a);
+}
+
+/*---------------------------------------------------*/
+/*  Header  */
+.header {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: 'FontTitulo', sans-serif;
+    background-color: #ffffff10;
+}
+
+/*---------------------------------------------------*/
+/*  Footer  */
+.footer {
+    padding: 30px;
+    background-color: #ffffff10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.footer p {
+    text-indent: 20px;
+}
