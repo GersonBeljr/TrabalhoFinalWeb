@@ -54,7 +54,7 @@ O jogo foi inspirado e tem referências em um teste do Detran, cujo o papel seri
     * Sessões de usuário para manter o acesso restrito.
 
 * **🕹️ Gameplay:**
-    * Jogo de digitação interativo implementado em JavaScript. *(Dica: Descreva brevemente o seu jogo. Ex: "Palavras caem da tela e o jogador deve digitá-las corretamente antes que cheguem ao final")*.
+    * Jogo de digitação interativo implementado em JavaScript.
     * Cálculo e exibição de pontuação ao final da rodada.
 
 * **📊 Quadros de Pontuação (Leaderboards):**
