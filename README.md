@@ -1,3 +1,4 @@
+ HEAD
 ---
 title: Detran
 
@@ -114,3 +115,4 @@ Refletindo sobre o processo de desenvolvimento, algumas abordagens alternativas 
 -Como próximos passos, a implementação do sistema de ligas permaneceria como a principal prioridade para a evolução do projeto. O plano seria iniciar pela modelagem do banco de dados, seguida pelo desenvolvimento dos endpoints da API em PHP para gerenciar os dados das ligas e, finalmente, construir as visualizações correspondentes em JavaScript.
 **Conclusão Final**
 Em suma, o projeto atingiu seus objetivos fundamentais e serve como uma base sólida e funcional. A não implementação do sistema de ligas, longe de ser um demérito, tornou-se um valioso estudo de caso sobre complexidade de software, planejamento e arquitetura, enriquecendo enormemente a experiência de aprendizado obtida ao longo da disciplina.
+
